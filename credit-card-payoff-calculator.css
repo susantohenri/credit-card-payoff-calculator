@@ -1,0 +1,57 @@
+#mortgage_loan_payoff_calculator table {
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  width: 95%;
+}
+
+#mortgage_loan_payoff_calculator th {
+  background-color: #27592b;
+  color: white;
+  text-align: left;
+  padding-left: 5px;
+  border-bottom: 1px solid black;
+}
+
+#mortgage_loan_payoff_calculator td {
+  padding: 0 5px;
+  color: black;
+  background-color: #e3f4e6;
+  text-align: left;
+}
+
+#mortgage_loan_payoff_calculator input[type="text"] {
+  width: 98%;
+  text-align: right;
+}
+
+[data-cell="C7"],
+[data-cell="C14"],
+[data-cell="C20"] {
+  text-align: right !important;
+}
+
+.parent-c13,
+[data-cell="C19"] {
+  text-align: center !important;
+  background-color: #bce1be !important;
+  font-weight: bold;
+}
+
+[data-cell="C19"] {
+  text-align: right !important;
+}
+
+[data-cell="C17"] {
+  text-align: center !important;
+}
+
+[data-cell="C18"] {
+  font-size: smaller !important;
+  text-align: right !important;
+}
+
+/* 
+#27592b
+#bce1be
+#e3f4e6
+*/
