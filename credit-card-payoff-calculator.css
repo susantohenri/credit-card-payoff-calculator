@@ -1,57 +1,86 @@
-#mortgage_loan_payoff_calculator table {
-  margin-bottom: 20px;
-  border-collapse: collapse;
+.calx {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin-bottom: 0.7rem;
+  padding-bottom: 4rem;
+  row-gap: 1.6rem;
+}
+
+.calx-title {
+  color: #000000;
+  flex-shrink: 0;
+  font-family: Inter, 'Source Sans Pro';
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: capitalize;
+  white-space: nowrap;
+  margin-top: 3rem;
+}
+
+.calx-row-single {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
   width: 100%;
 }
 
-#mortgage_loan_payoff_calculator th {
-  background-color: #27592b;
-  color: white;
+.calx-label {
+  align-items: baseline;
+  color: #000000;
+  display: flex;
+  flex-shrink: 0;
+  font-family: Inter, 'Source Sans Pro';
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 0.9rem;
+  white-space: nowrap;
+}
+
+.calx-input {
+  align-items: center;
+  background-color: #fafafa;
+  border: solid 0.1rem #d8d9db;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  display: flex;
+  padding: 0rem 1rem;
+  width: 100%;
+
+  color: #000000;
+  flex-shrink: 0;
+  font-family: Inter, 'Source Sans Pro';
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  white-space: nowrap;
+
   text-align: left;
-  padding-left: 5px;
-  border-bottom: 1px solid black;
 }
 
-#mortgage_loan_payoff_calculator td {
-  padding: 0 5px;
-  color: black;
-  background-color: #e3f4e6;
-  text-align: left;
+.calx-input:hover,
+.calx-input:focus {
+  border: solid 0.3rem rgba(18, 118, 246, 0.6000000238);
 }
 
-#mortgage_loan_payoff_calculator input[type="text"] {
-  width: 98%;
-  text-align: right;
+.calx-row-double {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
 }
 
-[data-cell="C7"],
-[data-cell="C14"],
-[data-cell="C20"] {
-  text-align: right !important;
+.calx-col-6 {
+  flex-shrink: 0;
+  height: 100%;
+  margin-right: 1.6rem;
+  width: 48%;
 }
 
-.parent-c13,
-[data-cell="C19"] {
-  text-align: center !important;
-  background-color: #bce1be !important;
-  font-weight: bold;
+.calx-output {
+  background-color: rgba(140, 198, 63, 0.1000000015);
+  border: solid 0.1rem #8cc63f;
 }
-
-[data-cell="C19"] {
-  text-align: right !important;
-}
-
-[data-cell="C17"] {
-  text-align: center !important;
-}
-
-[data-cell="C18"] {
-  font-size: smaller !important;
-  text-align: right !important;
-}
-
-/* 
-#27592b
-#bce1be
-#e3f4e6
-*/
