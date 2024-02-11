@@ -8,7 +8,12 @@ License: GPL2
 function credit_card_payoff_calculator()
 {
     ob_start();
-    wp_enqueue_style('life-calculator-style', plugins_url('credit-card-payoff-calculator.css', __FILE__), [], '1.0.1');
+    add_action('wp_enqueue_scripts', function () {
+        wp_dequeue_style('custom-css-css');
+        wp_deregister_style('custom-css-css', false, false);
+    }, 999);
+
+    wp_enqueue_style('life-calculator-style', plugins_url('credit-card-payoff-calculator.css', __FILE__), [], '1.0.2');
 
     include(plugin_dir_path(__FILE__) . 'credit-card-payoff-calculator.tpl.php');
     echo do_shortcode('[calx]');

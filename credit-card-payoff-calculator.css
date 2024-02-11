@@ -12,7 +12,7 @@
   color: #000000;
   flex-shrink: 0;
   font-family: Inter, 'Source Sans Pro';
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1.5;
   text-transform: capitalize;
@@ -33,7 +33,7 @@
   display: flex;
   flex-shrink: 0;
   font-family: Inter, 'Source Sans Pro';
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 0.9rem;
@@ -83,4 +83,28 @@
 .calx-output {
   background-color: rgba(140, 198, 63, 0.1000000015);
   border: solid 0.1rem #8cc63f;
+}
+
+.frame-52-tpD {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin-bottom: 2.4rem;
+  row-gap: 1.2rem;
+}
+
+.frame-48-nPo {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.frame-33-KPj {
+  background-color: #f4f9ec;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  height: 100%;
+  margin-right: 1.2rem;
+  padding: 1.5rem;
 }
